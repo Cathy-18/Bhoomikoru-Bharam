@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #faf9f5;
+    color: #141413;
+  }
+}
+
+/* Subtle bureaucratic paper dot pattern */
+.bg-paper-grid {
+  background-image: radial-gradient(#d4cfc4 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Bureaucratic Double Border */
+.border-double-bureaucrat {
+  border: 4px double #141413;
+}
+
+/* Micro scrollbar */
+.micro-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.micro-scrollbar::-webkit-scrollbar-track {
+  background: #ebe7dc;
+}
+
+.micro-scrollbar::-webkit-scrollbar-thumb {
+  background: #141413;
+  border-radius: 2px;
+}
+
+.micro-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #42413d;
+}
+
+/* Smooth input dodge transition */
+.smooth-dodge {
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Rubber Stamp Effect */
+.stamp-official {
+  border: 3px solid #991b1b;
+  color: #991b1b;
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0.25rem 0.75rem;
+  font-weight: 800;
+  display: inline-block;
+  transform: rotate(-4deg);
+  opacity: 0.85;
+}
+
+/* Scanlines for the dark crash screen */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.5) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.08),
+    rgba(0, 255, 0, 0.02),
+    rgba(0, 0, 255, 0.08)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
